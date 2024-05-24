@@ -1,0 +1,177 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a basic font and background for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Style for header elements */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Basic styling for main content */
+main {
+    margin: 20px auto;
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Basic styling for footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Link styles */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+
+/* Style for the container holding all strategy buttons */
+#strategies-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Style for each strategy button container */
+.strategy {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.strategy button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.strategy button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for strategy title and description */
+.strategy h3 {
+    margin: 0 0 10px 0;
+}
+
+.strategy p {
+    margin: 0 0 10px 0;
+}
+#leaves-display {
+    font-size: 30px;
+    left:50%;
+    bottom:10%;
+    position:absolute;
+    font-weight: bold;
+
+}
+
+
+#leaves-number {
+    color: green;
+}
+
+
+/* Style for the player containers */
+.player-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: auto; /* Push the containers to the bottom */
+    margin-bottom: 20px;
+}
+
+/* Style for the strategy and leaves boxes */
+.strategy, .leaves {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 100px;
+    margin: 5px;
+}
+
+
+/* Add a style for toggled button */
+.strategy-button.toggled {
+    background-color: #007bff;
+    color: white;
+}
+
+
+#players{
+    position:absolute;
+    bottom:0;
+}
+
+/* Style for the round button */
+#round-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
